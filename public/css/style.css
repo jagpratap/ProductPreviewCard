@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary_dark_cyan: hsl(158, 36%, 37%);
+  --primary_hover_dark_cyan: hsl(158, 36%, 30%);
+  --primary_active_dark_cyan: hsl(158, 36%, 25%);
+  --primary_cream: hsl(30, 38%, 92%);
+  --neutral_very_dark_blue: hsl(212, 21%, 14%);
+  --neutral_dark_grayish_blue: hsl(228, 12%, 48%);
+  --neutral_white: hsl(0, 0%, 100%);
+
+  /* Font family */
+  --fraunces_bold: "Fraunces, Bold";
+  --montserrat_bold: "Montserrat, Bold";
+  --montserrat_medium: "Montserrat, Medium";
+
+  /* Font size paragraph */
+  --para_font_size: 0.9rem;
+
+  /* Border radius */
+  --border_radius: 0.5rem;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--primary_cream);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 95%;
+  background-color: var(--neutral_white);
+  border-radius: var(--border_radius);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+  .card {
+    width: 40rem;
+    display: flex;
+  }
+}
+
+.card-image-mobile {
+  width: 100%;
+}
+
+.card-image-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .card-image-mobile {
+    display: none;
+  }
+
+  .card-image-desktop {
+    display: block;
+    width: 50%;
+  }
+}
+
+.card-body {
+  font-family: var(--montserrat_medium);
+  color: var(--neutral_dark_grayish_blue);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .card-body {
+    padding: 2.5rem;
+    gap: 1.25rem;
+  }
+}
+
+.card-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.card-title {
+  font-family: var(--fraunces_bold);
+  color: var(--neutral_very_dark_blue);
+}
+
+.card-text {
+  font-size: var(--para_font_size);
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-price h1 {
+  font-family: var(--fraunces_bold);
+  color: var(--primary_dark_cyan);
+}
+
+.card-price p {
+  text-decoration: line-through;
+}
+
+.card-button {
+  font-family: var(--montserrat_bold);
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--neutral_white);
+  background-color: var(--primary_dark_cyan);
+  border-radius: var(--border_radius);
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card-button:hover {
+  background-color: var(--primary_hover_dark_cyan);
+}
+
+.card-button:active {
+  background-color: var(--primary_active_dark_cyan);
+}

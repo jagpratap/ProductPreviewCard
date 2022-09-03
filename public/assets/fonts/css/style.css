@@ -1,0 +1,25 @@
+/*--------------------------Fraunces--------------------------*/
+
+/* 700 */
+@font-face {
+  font-family: "Fraunces, Bold";
+  src: url("../families/Fraunces/Fraunces-Bold.ttf") format("truetype");
+}
+
+/*--------------------------Fraunces--------------------------*/
+
+/*--------------------------Montserrat--------------------------*/
+
+/* 500 */
+@font-face {
+  font-family: "Montserrat, Medium";
+  src: url("../families/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+/* 700 */
+@font-face {
+  font-family: "Montserrat, Bold";
+  src: url("../families/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+/*--------------------------Montserrat--------------------------*/
