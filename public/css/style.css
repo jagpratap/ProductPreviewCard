@@ -36,7 +36,7 @@ body {
 }
 
 .card {
-  width: 95%;
+  width: 90%;
   background-color: var(--neutral_white);
   border-radius: var(--border_radius);
   overflow: hidden;
