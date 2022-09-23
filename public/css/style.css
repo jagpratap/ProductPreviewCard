@@ -45,6 +45,7 @@ body {
 @media screen and (min-width: 640px) {
   .card {
     width: 40rem;
+    height: 28rem;
     display: flex;
   }
 }
@@ -65,7 +66,6 @@ body {
   .card-image-desktop {
     display: block;
     width: 50%;
-    height: 28rem;
     object-fit: cover;
     flex-shrink: 0;
   }
